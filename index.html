@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Bonny Kingdom Muslim Ummah Central Mosque Website">
+     <title>Central Mosque Bonny</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawsome/4.7.0/css/font-awsome.min.css">-->
+     
+
+</head>
+<body>
+
+     <header>
+          <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+               </ul>
+          </nav>         
+     </header>
+
+    <main id="main">
+         
+    <br>
+    <!--<h5 class="out-in"><a href="logout.php">Logout</a></h5>-->
+          
+          <aside>
+               <img src="images/domeimage.jpeg" alt="Dome Image">
+               <ul id="act-link">
+                    <p class="act">Activities</p>
+                    <li><a href="meeting.html" target="_blank" rel="noopener noreferrer">Meetings</a></li>
+                    <li><a href="islamiyyah.html" target="_blank" rel="noopener noreferrer">Islamiyyah</a></li>
+                    <li><a href="lessons.html" target="_blank" rel="noopener noreferrer">Mosque Lessons</a></li>
+                    <li><a href="walimah.html" target="_blank" rel="noopener noreferrer">Walimah</a></li>
+                    <li><a href="income.html" target="_blank" rel="noopener noreferrer">Contribution/Sources of Income</a></li>
+                    <li><a href="db.html" target="_blank" rel="noopener noreferrer">Are you a muslim living in Bonny? <br> Register here!</a></li>
+               </ul>
+
+               <br>
+     
+               <form action="/search/index.html" data-submitfalse="q"  method="GET" role="search">
+                    <input id="search" type="search" placeholder="search..."></input><br>
+                    <img src="images/searchicon.png" alt="search">
+                    <button class="nav-but" type="submit" value="">submit</button>
+               </form>
+          </aside>
+          
+          
+     <section>
+             <h1>BONNY KINGDOM MUSLIM UMMAH CENTRAL ZONE</h1>
+
+             <div class="banner">
+                    <img src="images/central2.jpg" alt="Central Mosque Bonny Island">
+             </div>
+
+             <br><br>
+             
+             <h3>Assalamu Alaikum, <div id="nice">user</div> </h3>
+     </section>
+
+    </main>
+
+    <footer>
+         <p><address>Central Mosque - Gen. GT Kububo Street, off New Road Bonny Island, Rivers Nigeria </address></p>
+         <p><small>&copy; 2021 Bonny Kingdom Muslim Ummah Central Zone - All righsts reserved</small></p>
+         <p>Contact us via <a href="mailto:umarmohdkamel@gmail.com" target="_blank">Email</a></p>
+         <p><small>Developed by: <a href="devs.html" target="_blank" rel="noopener noreferrer">Ghali &  Kamel</a></small></p>
+    </footer>
+
+    <script src="javascript/index.js"></script>
+    <script>
+     firebase.auth.onAuthStateChanged(function() {
+          if(user) {
+               Window.location.href = "login.html";
+          }
+     });
+</script>
+  
+</body>
+</html>
