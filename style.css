@@ -1,0 +1,259 @@
+*{
+     margin: 0;
+}
+
+body {
+     padding: 0;
+     margin: 0;
+}
+
+body, html {
+     font-family: sans-serif;    
+}
+
+header {
+     position: static;
+     width: 100%;
+     height: 30px;
+     padding-left: 20px;
+     padding-top: 5px;
+     background-color: #0e5e3f;
+}
+
+nav > ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+nav > ul > li {
+     float: left;
+}
+
+nav > ul > li a {
+     display: block;
+     padding: 5px;
+     color: white;
+     text-align: center;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+main {
+     
+     margin: 0;
+     padding:0;
+}
+
+
+
+h1 {
+     margin-top: 20px;
+     text-align: center;
+     color: #0e5e3f;
+}
+
+h2, h3 {
+     color: #0e5e3f;
+}
+
+h5 a {
+     float: right;
+     margin-right: 30px;
+     margin-top: 5px;
+     text-decoration: none;    
+}
+
+h6 {
+     float: right;
+}
+
+#search {
+     width: 150px;
+     margin-left: 30px;
+}
+
+[src="images/searchicon.png"] {
+     width: 15px;
+     height: 15px;
+     margin-left: 30px;
+}
+
+.nav-but {
+     margin-left: 90px;
+     padding: 2px;
+     background: #ddd;
+     font-size: 12px;
+     border: none;
+     cursor: pointer;
+}
+
+.act {
+     font-weight: bold;
+     color: #0e5e3f;
+}
+
+#act-link a {
+     text-decoration: none;
+}
+
+.banner {
+     margin-top: 20px;
+     text-align: center;   
+}
+
+[src="images/domeimage.jpeg"] {
+     width: 50px; 
+     height: 30px;
+     margin-top: 5px;
+     margin-bottom: 10px;
+     margin-left: 30px;
+}
+
+[src="images/centra1.jpg"],
+[src="images/central2.jpg"], 
+[src="images/bonnymosque1.jpeg"] {
+     width: 350px;
+     height: 250px;
+     text-align: center;
+     margin-right: auto;
+     border: 1px solid #008000;
+}
+
+.left {
+     font-weight: bold;
+}
+
+fieldset {
+     display: block;
+     background: #caf0ac;
+     width: 50%;
+     margin-left: 20%;
+     margin-top: 50px;
+     padding: 15px;
+     border-radius: 15px;
+}
+
+legend {
+     background-color: #0e5e3f;
+     width: 100px;
+     font-weight: bold;
+     font-size: large;
+     color: #fff;
+     text-align: center;
+     padding: 5px;
+     border-radius: 5px;
+}
+
+input {
+     width: 100%;
+     height: 20px;
+     border: 1px solid #777;
+     border-radius: 5px;
+     margin-bottom: 5px;
+} 
+
+.btn {
+     background: #0e5e3f;
+     padding: 3px;
+     font-weight: bold;
+     color: #fff;
+     border-radius: 5px;
+}
+
+.users {
+     font-weight: bold;
+     margin-left: 25%;
+}
+
+.active a {
+     text-decoration: none;
+}
+
+.active {
+     display: block;
+     background-color: #d7eec6;
+     color: #0e5e3f;
+     width: 75%;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 20px;
+     font-size: 15px;
+     margin-top: 10px;
+}
+
+#account {
+     color: #000;
+     background-color: #eeeeb0;
+
+     border: 1px solid black;
+}
+
+#remind {
+     color: #fff;
+     background-color: #516e4f;
+}
+
+section {
+     margin: 0px;
+}
+
+.devs {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.ghali {
+     float: left;
+     width: 30%;
+}
+
+.kamel {
+     float: right;
+     width: 40%;
+}
+
+footer {
+     display: block;
+     width: 100%;
+     padding: 10px;
+     margin-right: auto;
+     margin-left: auto;
+     background-color: #d7eec6;
+     text-align: center;
+     color: #008000;
+}
+
+.devs {
+     display: flex;
+     flex-wrap: no-wrap;
+     flex-direction: row;
+     justify-content: space-around;
+}
+
+
+@media screen and (min-width: 768) {
+     main {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 0;
+          padding:0;
+     }
+     
+     aside {
+          float: left;
+     }
+     
+     section {
+          float: right;
+     }
+     
+
+}
+
+
+
