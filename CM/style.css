@@ -2,21 +2,31 @@
      margin: 0;
 }
 
+html,
 body {
-     padding: 0;
-     margin: 0;
+     height: 100%;    
 }
 
-body, html {
-     font-family: sans-serif;    
+body {
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+     margin: 0.5em 0 0.5em 0;
+
+}
+.article {
+     width: 75%;
 }
 
 header {
-     position: static;
+     display: block;
+     position: fixed;
+     top: 0;
+     left: 0;
      width: 100%;
      height: 30px;
-     padding-left: 20px;
-     padding-top: 5px;
+     padding: 10px;
      background-color: #0e5e3f;
 }
 
@@ -45,7 +55,10 @@ main {
      padding:0;
 }
 
-
+aside,
+article {
+     padding: 2em;
+}
 
 h1 {
      margin-top: 20px;
@@ -55,6 +68,19 @@ h1 {
 
 h2, h3 {
      color: #0e5e3f;
+}
+
+#salam {
+     text-align: center;
+}
+
+#greet {
+
+     border: solid 1px white;
+     padding: 5px;
+     width: auto;
+     margin-top: 10px;
+     text-align: center;
 }
 
 h5 a {
@@ -71,6 +97,10 @@ h6 {
 #search {
      width: 150px;
      margin-left: 30px;
+}
+
+#data {
+     background-color: #e6eedd;
 }
 
 [src="images/searchicon.png"] {
@@ -124,34 +154,16 @@ h6 {
      font-weight: bold;
 }
 
-fieldset {
-     display: block;
-     background: #caf0ac;
-     width: 50%;
-     margin-left: 20%;
-     margin-top: 50px;
-     padding: 15px;
-     border-radius: 15px;
-}
-
-legend {
-     background-color: #0e5e3f;
-     width: 100px;
-     font-weight: bold;
-     font-size: large;
-     color: #fff;
-     text-align: center;
-     padding: 5px;
-     border-radius: 5px;
-}
-
 input {
      width: 100%;
      height: 20px;
      border: 1px solid #777;
-     border-radius: 5px;
      margin-bottom: 5px;
-} 
+}
+
+#address {
+     width: 100%;
+}
 
 .btn {
      background: #0e5e3f;
@@ -161,20 +173,37 @@ input {
      border-radius: 5px;
 }
 
-.users {
+#btn {
+     background-color: #0e5e3f;
+     color: #fff;
      font-weight: bold;
-     margin-left: 25%;
+     padding: 5px;
+     margin-left: auto;
+     margin-right: auto;
+     border-style: none;
+     border-radius: 5px;
+}
+
+.container-1 {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: 10px;
 }
 
 .active a {
      text-decoration: none;
 }
 
+.member {
+     text-align: center;
+}
+
+
 .active {
-     display: block;
      background-color: #d7eec6;
      color: #0e5e3f;
-     width: 75%;
+     width: 300px;
      height: auto;
      margin-left: auto;
      margin-right: auto;
@@ -186,13 +215,18 @@ input {
 #account {
      color: #000;
      background-color: #eeeeb0;
-
      border: 1px solid black;
 }
 
 #remind {
      color: #fff;
      background-color: #516e4f;
+     margin-bottom: 10px;
+}
+
+#remind-h2 {
+     color: #fff; 
+     margin-bottom: 10px;
 }
 
 section {
@@ -216,6 +250,17 @@ section {
      width: 40%;
 }
 
+.register {
+     display: block;
+     color: #516e4f;
+     margin-left: 25%;
+     width: 50%;
+}
+
+textarea {
+     width: 50%;
+}
+
 footer {
      display: block;
      width: 100%;
@@ -229,13 +274,13 @@ footer {
 
 .devs {
      display: flex;
-     flex-wrap: no-wrap;
+     flex-wrap: nowrap;
      flex-direction: row;
      justify-content: space-around;
 }
 
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
      main {
           display: flex;
           flex-direction: row;
@@ -245,14 +290,32 @@ footer {
      }
      
      aside {
+          margin-top: 50px;
           float: left;
      }
      
-     section {
+     article {
+          margin-top: 30px;
+          margin-right: 10%;
           float: right;
      }
-     
 
+     .register {
+          display: block;
+          color: #516e4f;
+          margin-top: 100px;
+          margin-right: auto;
+          margin-left: auto;
+          width: 25%;
+     } 
+
+     #remind {
+          width: auto;
+          color: #fff;
+          background-color: #516e4f;
+          margin-bottom: 10px;
+     }
+     
 }
 
 
